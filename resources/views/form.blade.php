@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <form action="seu_script_de_envio.php" method="post" class="email-form">
+    <form action="{{ url("/") }}" method="post" class="email-form">
+        @csrf
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
 
